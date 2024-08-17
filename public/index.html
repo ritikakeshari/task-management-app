@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../src/style/index.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/jquery.cookie/jquery.cookie.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/3.0.1/js.cookie.min.js"></script>
+    <script src="../src/script/index.js"></script>
+</head>
+
+<body class="light">
+    <div>
+        <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Task Manager</a>
+                <div class="ms-auto d-flex align-items-center">
+                    <span class="text-light me-2">Mode:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="modeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <i id="modeIcon" class="bi bi-sun text-light ms-2"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Section -->
+        
+
+        <div class="container mt-5">
+            <div id="btnContainer" class="text-center mb-4">
+                <div id="welcome-section" class="text-center mt-5 pt-5">
+                    <h1>Welcome to Task Manager</h1>
+                    <p class="lead">Efficiently manage your tasks and boost your productivity.</p>
+                    <img src="images/logo.jpg" alt="Task Management" width="500px" class="img-fluid rounded shadow">
+                </div>
+                <button id="btnSignin" class="btn btn-lg">Sign In</button>
+                <button id="btnRegister" class="btn btn-secondary btn-lg">Register</button>
+            </div>
+
+            <!-- Registration and Sign-In Section -->
+            <section id="auth-section" class="auth-section mt-4">
+                <!-- Content will be loaded dynamically -->
+            </section>
+        </div>
+
+        <footer class="bg-dark text-light text-center py-3 fixed-bottom">
+            <p>&copy; 2024 Task Manager. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+
+</html>

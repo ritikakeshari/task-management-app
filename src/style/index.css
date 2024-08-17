@@ -1,0 +1,184 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #000000 !important; /* Ensures header color is fixed */
+    color: #f8f9fa !important; /* Ensures text color in header is fixed */
+}
+
+.navbar .navbar-brand {
+    color: #f8f9fa !important; /* Ensures color for navbar brand */
+}
+
+.navbar .navbar-dark .navbar-nav .nav-link {
+    color: #f8f9fa !important; /* Ensures color for nav links */
+}
+
+.navbar .navbar-dark .navbar-toggler-icon {
+    background-color: #f8f9fa !important; /* Ensures color for toggler icon */
+}
+
+/* Switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #262927;
+    box-shadow: 0 0 30px rgb(250, 251, 248);
+  }
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.round {
+    border-radius: 34px;
+}
+
+/* Light mode styles */
+body.light {
+    background-color: white;
+    color: #212529;
+}
+
+body.light .dashboard-container {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+body.light .alert {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+body.light footer {
+    background-color: #e3f2fd;
+    color: #212529;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark .dashboard-container {
+    background-color: #909dab;
+    color: #f8f9fa;
+}
+
+body.dark .alert {
+    background-color: #31506e;
+    color: #ecf0f1;
+}
+
+body.dark .modal-content{
+    background-color: #343a40;
+    color:white;
+}
+
+body.dark footer {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+
+/* Main content styling */
+.main-content {
+    padding: 60px 15px 60px; /* Adjust top padding to avoid overlap with fixed header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* To ensure footer does not overlap content */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: 8px;
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+/* Additional styles */
+.text-center {
+    text-align: center;
+}
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+.pt-5 {
+    padding-top: 3rem;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+#btnSignin{
+    background: rgb(1, 200, 107);
+}

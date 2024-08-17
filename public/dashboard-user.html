@@ -1,0 +1,81 @@
+<div class="dashboard-container p-4 rounded shadow">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-dark"><span id="lblUserId"></span>'s Dashboard</h2>
+        <div class="btn-group gap-1 w-25">
+            <button class="btn btn-dark btn-add-task" data-bs-toggle="modal" data-bs-target="#add-task">
+                <i class="bi bi-calendar-plus"></i> Add Task
+            </button>
+            <button id="btnSignout" class="btn btn-dark btn-signout">Sign Out</button>
+        </div>
+    </div>
+
+    <!-- Add Task Modal -->
+    <div class="modal fade" id="add-task">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addTaskModalLabel">Add Appointment</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="addTaskForm">
+                        <div class="mb-3">
+                            <label for="Add_AppointmentId" class="form-label">Appointment ID</label>
+                            <input type="number" id="Add_AppointmentId" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Add_Title" class="form-label">Title</label>
+                            <input type="text" id="Add_Title" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="Add_Description" class="form-label">Description</label>
+                            <textarea id="Add_Description" rows="4" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="Add_Date" class="form-label">Date</label>
+                            <input type="date" id="Add_Date" class="form-control">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Task Modal -->
+    <main class="d-flex flex-wrap gap-3">
+        <div class="modal fade" id="edit-task">
+            <div class="modal-dialog" id="bg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="editTaskModalLabel">Edit Appointment</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="editTaskForm">
+                            <div class="mb-3">
+                                <label for="Edit_AppointmentId" class="form-label">Appointment ID</label>
+                                <input type="number" id="Edit_AppointmentId" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Edit_Title" class="form-label">Title</label>
+                                <input type="text" id="Edit_Title" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Edit_Description" class="form-label">Description</label>
+                                <textarea id="Edit_Description" rows="4" class="form-control"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="Edit_Date" class="form-label">Date</label>
+                                <input type="date" id="Edit_Date" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" id="btnSaveAppointment" data-bs-dismiss="modal">Save Changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+</div>
