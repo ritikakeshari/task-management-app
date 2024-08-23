@@ -1,7 +1,10 @@
 # Task Management Web Application
 
+## Dark Mode Screenshot:
 ![Task Management Dark Mode Screenshot](/public/images/DarkMode.png)
 
+## Light Mode Screenshot:
+![Task Management Dark Mode Screenshot](/public/images/LightMode.png)
 
 ## Table of Contents
 - [Introduction](#introduction)
