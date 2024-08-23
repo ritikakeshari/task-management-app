@@ -1,8 +1,7 @@
 # Task Management Web Application
 
-![Task Management Screenshot]<br>
-## Dark Mode:
-(https://github.com/ritikakeshari/task-management-app/blob/master/public/images/DarkMode.png)
+![Task Management Dark Mode Screenshot](/public/images/DarkMode.png)
+
 
 ## Table of Contents
 - [Introduction](#introduction)
