@@ -38,7 +38,7 @@ This Task Management Web Application is designed to help users manage their task
   - Node.js
   - Express.js
 - **Database:**
-  - JSON file (or any simple database solution)
+  - MongoDB, JSON file
 - **Additional Libraries:**
   - jQuery Cookie Plugin
 
